@@ -33,8 +33,8 @@ func main() {
 		mode string
 	)
 
-	flag.StringVar(&url, "u", "https://www.google.co.jp/", "URL")
-	flag.StringVar(&mode, "m", "tw", "出力モードを選択 (tw|mail|rm|md)")
+	flag.StringVar(&url, "u", "https://www.google.co.jp/", "specify URL")
+	flag.StringVar(&mode, "m", "tw", "select format mode (tw|mail|rm|md)")
 	flag.Parse()
 
 	doc, err := goquery.NewDocument(url)
